@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Store } from './redux/config/configStore'
 import { Provider } from 'react-redux';
-import store  from '../src/redux/modules/todoSlice'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
+  <Provider store={Store}>
     <App />
   </Provider>
 );
